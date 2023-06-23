@@ -81,8 +81,8 @@ while (!firstUser.isLogged) {
   firstUser.fullName = await input({ message: "Nome:" });
   firstUser.password = await input({ message: "Senha:" });
   if (firstUser.password == password) {
-    firstUser.isLogged = 1;
     firstUser.name = firstUser.GetFirstName();
+    firstUser.isLogged = 1;
     console.clear();
   }
   else
