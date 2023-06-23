@@ -150,7 +150,7 @@ while (firstUser.isLogged) {
           if (answerPrint) 
           {
             firstUser.transactions.forEach(t => {
-              if (t.type !== 'Transferência')
+              if (t.type === 'Transferência')
                 console.log(`---${t.type}---\nValor: R$ ${t.value}\n`);
               else 
               {
